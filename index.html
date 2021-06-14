@@ -1,0 +1,62 @@
+<script src="covid.js"></script>
+<html>
+  <head>
+      <meta name="viewport" content="width=devic-width,intial-scale=0.1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="covid.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap" rel="stylesheet"> 
+    <title>covid Registration</title>
+  </head>
+  <body >
+ 
+      <nav>
+          <div class="logo"> <h1 class="animated infinite heartBeat">Covid-19</h1></div>
+          <div class="menu">
+            <a href="#">About</a>
+              <a href="#">Facebook</a>
+               <a href="#">Contact</a>
+                <a href="#">Gmail</a>
+                
+          </div>
+      </nav>
+  
+    <main>
+    <select id="area" onchange="show()" >
+      <option>-Select Area-</option>  
+      <option value="1000">Thatipur</option>  
+      <option value="2000">Hazira</option>  
+      <option value="500">Lashkar</option>  
+
+    </select> &nbsp;&nbsp;
+
+    <select id="vac" onchange="vaccine()">
+        <option>-Select Vaccine-</option>  
+        <option value="250">Covaxin</option>
+        <option value="500">Covidshield</option>
+        <option value="700">Sputnik</option>
+    </select><br><br>
+
+
+    <img src="  " id="vimg" width="200"><br><br>
+    <div id="vname"> </div>&nbsp;&nbsp;
+    <div id="vprice"> </div><br><br>
+
+
+    <input style=padding:2px; type="text" id="rgst" placeholder="Enter Value">
+    <input type="button" id="btn" value="Submit" ondblclick="subtract()"><br><br>
+
+    
+
+    
+    <div id="areaname"> </div><br>
+    <div id="tdose">  </div><br>
+    <div id="demand"> </div><br>
+    <div id="rdose"> </div><br>
+
+  </main>
+ 
+
+    
+  </body>
+</html>
